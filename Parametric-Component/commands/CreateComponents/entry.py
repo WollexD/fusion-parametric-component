@@ -260,7 +260,7 @@ def select_spreadsheet():
     # if 20 blank cells in a row are encountered assume row is finished (rest are blank)
     max_col_check = 20
     with open(filename, 'r', newline='', encoding='utf-8-sig') as csvfile:
-        csv_data = csv.reader(csvfile, delimiter=',', quotechar='|')
+        csv_data = csv.reader(csvfile, delimiter=';', quotechar='|')
 
         # list col that contains any data
         start_col = 0
